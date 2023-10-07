@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Form from './Form';
-import { getServerSession } from 'next-auth';
-import { options } from './options';
 import Card from './Card';
+import { getServerSession } from 'next-auth';
+import { options } from './api/auth/[...nextauth]/route';
 
 export default async function Home() {
   const session = await getServerSession(options);
