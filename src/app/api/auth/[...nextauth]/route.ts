@@ -10,6 +10,7 @@ const options: NextAuthOptions = {
   ],
 };
 
-export const handler = NextAuth(options);
 
+const handler = NextAuth(options);
+// @ts-ignore
 export { handler as GET, handler as POST, options };
